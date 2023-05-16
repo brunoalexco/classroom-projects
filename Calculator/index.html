@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <script>
+        alert('Sum');
+        let number1 = Number(prompt('Enter a number'));
+        let number2 = Number(prompt('Enter a number'));
+        alert('what operation would you like to make')
+        let response = prompt('1 sum, 2 substract, 3 multiplication, 4 division');
+        if (response == '1') {
+            alert(number1 + number2)
+        } else if (response == '2') {
+            alert(number1 - number2)
+        } else if (response == '3') {
+            alert(number1 * number2)
+        } else if (response == '4') {
+            alert(number1 / number2)
+        }
+    </script>
+</body>
+</html>
