@@ -1,28 +1,19 @@
-:root {
-    --main-primary-color: #149eca;
-    --primary-text-color: white;
-}
+@import './modules/variables/variables.css';
+@import './modules/components/header.css';
 
 .body {
     margin: 0;
-    background-color: rgb(18, 32, 45);
-    color: var(--main-primary-color);
-    font-family: monospace;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(3, 10, 24);
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
 }
 
 .nav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     --i-menu: 1;
     --i-close: 0;
+    --padding-nav: 1rem;
+    padding-top: var(--padding-nav);
+    padding-bottom: var(--padding-nav);
 }
 
 #menu:target {
@@ -36,8 +27,8 @@
 }
 
 .section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: var(---primary-spacing);
+    padding-bottom: var(---primary-spacing);
 }
 
 
@@ -50,7 +41,7 @@
 
 .title {
     margin: 0;
-    color: var(--main-primary-color);
+    color: var(--primary-main-color);
     font-size: 2rem;
     text-align: center;
 }
@@ -68,7 +59,7 @@
 .img--hero {
     height: 256px;
     border-radius: 50%;
-    box-shadow: -0.25rem -0.25rem 1rem var(--main-primary-color), 0.25rem 5px 1rem;
+    box-shadow: -0.25rem -0.25rem 1rem var(--primary-main-color), 0.25rem 5px 1rem;
 }
 
 @media (min-width: 768px){
@@ -113,7 +104,7 @@
 }
 
 .link:hover {
-    color: var(--main-primary-color);
+    color: var(--primary-main-color);
 }
 
 .hero {
@@ -158,6 +149,7 @@
 
 .card__text {
     margin: 0;
+    color: var(--primary-text-color);
 }
 
 @media (min-width: 768px) {
@@ -181,7 +173,7 @@
 .icon {
     display: flex;
     font-size: 1rem;
-    color: var(--main-primary-color);
+    color: var(--primary-main-color);
     text-decoration: none;
 }
 
@@ -212,9 +204,9 @@
     padding: 0.5em 2em;
     border: none;
     border-radius: 1rem;
-    background-color: var(--main-primary-color);
+    background-color: var(--primary-main-color);
     color: white;
-    font-family: monospace;
+    font-family: var(--primary-font-family);
     font-size: 0.75rem;
     font-weight: 700;
     text-decoration: none;
@@ -224,7 +216,7 @@
 
 .button:hover {
     box-shadow:
-    0 0 0.25rem  var(--main-primary-color);
+    0 0 0.25rem  var(--primary-main-color);
     filter: brightness(1.090);
 }
 
@@ -297,8 +289,12 @@
     gap: 2rem;
 }
 
+.bg-secondary {
+    background-color: var(--seconday-background-color);
+}
+
 .color-primary {
-    color: var(--main-primary-color);
+    color: var(--primary-main-color);
 }
 
 .d-flex {
