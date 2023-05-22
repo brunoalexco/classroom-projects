@@ -1,9 +1,9 @@
 :root {
     --primary-max-width: 512px; 
     --primary-spacing: 1rem;
+    --primary-border-radius: 1rem;
     --primary-main-color: #006341;
     --primary-background-color: white;
-    --primary-border-radius: 1rem;
     --primary-text-color: black;
     --secondary-text-color: #777;
     --white-color: white;

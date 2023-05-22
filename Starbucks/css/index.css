@@ -3,8 +3,10 @@
 @import './modules/components/nav.css';
 @import './modules/layout/container.css';
 @import './modules/layout/flexbox.css';
+@import './modules/components/hero.css';
 @import './modules/components/list.css';
 @import './modules/content/link.css';
+@import './modules/content/img.css';
 @import './modules/utils/utils.css';
 
 
@@ -12,5 +14,4 @@
     margin: 0;
     background-color: var(--primary-background-color);
     font-family: var(--primary-font-family);
-
 }
