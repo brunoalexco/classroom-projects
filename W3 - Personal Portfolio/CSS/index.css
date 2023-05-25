@@ -11,14 +11,14 @@
 .nav {
     --i-menu: 1;
     --i-close: 0;
-    --padding-nav: 1rem;
+    --padding-nav: 2rem;
     padding-top: var(--padding-nav);
     padding-bottom: var(--padding-nav);
 }
 
 #menu:target {
     --i-menu: 0;
-    --i-close: 1; 
+    --i-close: 1;
 }
 
 #menu:target .list--menu {
@@ -27,15 +27,15 @@
 }
 
 .section {
-    padding-top: var(---primary-spacing);
+    padding-top: 4rem;
     padding-bottom: var(---primary-spacing);
 }
 
 
 .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 1024px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 1088px;
     margin: auto;
 }
 
@@ -59,7 +59,7 @@
 .img--hero {
     height: 256px;
     border-radius: 50%;
-    box-shadow: -0.25rem -0.25rem 1rem var(--primary-main-color), 0.25rem 5px 1rem;
+    box-shadow: 0.15rem -0.15px 0.6rem;
 }
 
 @media (min-width: 768px){
@@ -109,7 +109,7 @@
 
 .hero {
     min-height: 100vh;
-    background-image: linear-gradient(#00000080, #00000080), url('https://i.postimg.cc/x9MyhM3D/react-system.webp');
+    background-image: linear-gradient(#00000080, #00000080), url('https://img.freepik.com/free-vector/digital-dark-wavy-background_23-2148388254.jpg?w=1800&t=st=1684806664~exp=1684807264~hmac=0be41ac6b64cebb6249f7507eba5418b88e59b195394bec602fa554bf8502ae2');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -133,9 +133,9 @@
 }
 
 .card__body__serv{
-    background-color: rgb(32, 97, 97);
+    background-color: #3691af;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
 }
 
 .card__title {
@@ -203,7 +203,7 @@
     display: flex;
     padding: 0.5em 2em;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     background-color: var(--primary-main-color);
     color: white;
     font-family: var(--primary-font-family);
