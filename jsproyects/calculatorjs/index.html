@@ -14,19 +14,20 @@
         const operation = prompt('enter your operation');
         let number1 = +prompt('enter the first numebr')
         let number2 = +prompt('enter the second numebr')
+        let result = 0;
 
         switch (operation) {
             case "+":
-                alert(number1 + number2);
+                result = number1 + number2;
                 break;
             case "-":
-                alert(number1 - number2);
+                result = number1 - number2;
                 break;
             case "*":
-                alert(number1 * number2);
+                result = number1 * number2;
                 break;
             case "/":
-                alert(number1 / number2);
+                result = number1 / number2;
                 break;
             default:
                 alert('Operation not supported');
