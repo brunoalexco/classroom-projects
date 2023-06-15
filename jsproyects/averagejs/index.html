@@ -5,10 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+          min-height: 200vh;
+        }
+    
+        .body {
+          background-color: #16181d;
+        }
+    
+        .color-primary {
+          color: #087ea4;
+        }
+      </style>
 </head>
-
+    <h1 class="title" id="titlehomepage">Average</h1>
+    
 <body>
     <script>
+        const title = document.getElementById('titlehomepage');
+        title.addEventListener('dblclick', () => {
+            title.innerText = `Congrats`;
+        });
+
+        document.addEventListener('scroll', () => {
+        title.classList.add('color-primary');
+        document.body.classList.add('body');
+        });
+        
+        // console.log(document.getElementById('titlehomepage'));
+        // console.log(document.querySelector('h1'));
+        // console.log(document.querySelector('title'));
+        // console.log(document.querySelectorAll('.list'))
         /* const averageNotes = (e, r, t) => {
             return (e + r + t) / 3;
         };
@@ -108,8 +136,26 @@
         // total = heroes.reduce((acumulator, currentValue) => acumulator + currentValue.id, 0);
         // console.log(total)
 
-        console.log(window.innerWidth);
-        confirm('wanna be my girlfriend?');
+        // const timeoutId = setTimeout(() => {
+        //     console.log('Whats up');
+        // }, 2000);
+
+        // const intervalId = setInterval(() => {
+        //     console.log('Are we there yet?');
+        // }, 100);
+
+        // setTimeout(() => {
+        //     clearTimeout(timeoutId);
+        // }, 3000);
+
+        // setTimeout(() => {
+        //     clearTimeout(intervalId);
+        // }, 5000);
+
+        // window.addEventListener('click', () => {
+            
+        // });
+
     </script>
 </body>
 </html>
