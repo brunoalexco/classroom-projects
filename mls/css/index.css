@@ -1,0 +1,75 @@
+@import './modules/variables/variables.css';
+@import './modules/components/header.css';
+@import './modules/components/nav.css';
+@import './modules/layout/container.css';
+@import './modules/layout/flexbox.css';
+@import './modules/components/hero.css';
+@import './modules/components/list.css';
+@import './modules/content/link.css';
+@import './modules/content/img.css';
+@import './modules/utils/utils.css';
+@import './modules/components/pathline.css';
+
+
+.body {
+    margin: 0;
+    background-color: var(--primary-background-color);
+    font-family: var(--primary-font-family);
+}
+
+.section-two {
+    position: relative;
+    margin-bottom: 100px;
+    /* Increase the margin to create more space after the first section */
+}
+
+.pathline {
+    position: absolute;
+    width: 913px;
+    height: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    border: 5px solid #D6D6D6;
+    z-index: -1;
+    /* Move the line behind other elements */
+    margin-bottom: 50px;
+    /* Increase the margin to create more space before the third section */
+}
+
+.circle {
+    position: absolute;
+    top: calc(50% - 10px);
+    /* Adjust the position of the circle */
+    left: 125px;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.section-three {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 250px;
+    /* Increase the margin to create more space before the third section */
+    margin-bottom: 50px;
+    /* Increase the margin to create more space after the third section */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of the CSS styles remain the same */

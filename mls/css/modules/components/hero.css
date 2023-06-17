@@ -1,0 +1,9 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+

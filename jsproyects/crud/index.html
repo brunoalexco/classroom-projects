@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CRUD</title>
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 </head>
@@ -12,65 +13,38 @@
 <body>
   <header>
     <div class="container">
-      <h1>CRUD</h1>
+      <h1 class="text-center">Pokémon</h1>
     </div>
   </header>
   <main>
     <div class="container">
-      <h2>Pokémon</h2>
-      <div>
-        <div class="table-responsive">
+      <h2 class="text-center">CRUD</h2>
+      <div class="row">
+        <div class="col-md-8 table-responsive">
           <table class="table table-striped table-hover">
             <thead>
               <tr>
-                <th>#</th>
+                <th>id</th>
                 <th>Nombre</th>
                 <th>Tipo</th>
                 <th>Imagen</th>
+                <th>Acciones</th>
               </tr>
             </thead>
-            <tbody id="pokemonTBody">
-              <tr>
-                <td>1</td>
-                <td>Charmander</td>
-                <td><span class="badge text-bg-danger">Fuego</span></td>
-                <td>
-                  <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander" width="32"
-                    height="32" />
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Squirtle</td>
-                <td><span class="badge text-bg-primary">Agua</span></td>
-                <td>
-                  <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Charmander" width="32"
-                    height="32" />
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Bulbasaur</td>
-                <td><span class="badge text-bg-success">Planta</span></td>
-                <td>
-                  <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Charmander" width="32"
-                    height="32" />
-                </td>
-              </tr>
-            </tbody>
+            <tbody id="pokemonTBody" />
           </table>
         </div>
-        <form name="pokemonForm">
+        <form name="pokemonForm" class="col-md-4">
           <div class="form-floating mb-3">
-            <input type="text" name="name" class="form-control" id="pokemonName" placeholder="Nombre">
+            <input type="text" name="name" class="form-control" id="pokemonName" placeholder="Nombre" required>
             <label for="pokemonName">Nombre</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="text" name="type" class="form-control" id="pokemonType" placeholder="Tipo">
+            <input type="text" name="type" class="form-control" id="pokemonType" placeholder="Tipo" required>
             <label for="pokemonType">Tipo</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="url" name="image" class="form-control" id="pokemonImage" placeholder="Imagen">
+            <input type="url" name="image" class="form-control" id="pokemonImage" placeholder="Imagen" required>
             <label for="pokemonImage">Imagen</label>
           </div>
           <button type="submit" class="btn btn-primary w-100">Crear</button>
@@ -78,7 +52,8 @@
       </div>
     </div>
   </main>
-  <script type="module" src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <script type="module" src="./js/index.js" defer></script>
 </body>
 
 </html>

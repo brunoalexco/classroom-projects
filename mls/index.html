@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <title>starbucks</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .hero {
+            position: relative;
+        }
+
+        .pathline {
+            position: absolute;
+            width: 913px;
+            height: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            border: 5px solid #D6D6D6;
+        }
+    </style>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="nav">
+            <div class="container flexbox flexbox--header">
+                <a href="#">
+                    <img src="./img/lmslogo.png" alt="starbucks log" width="48" height="48" class="img img--logo"/>
+                </a>
+                <ul class="list d-flex gap-xs">
+                    <li>
+                        <a href="#" class="link">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="hero">
+            <div class="container-hero">
+                <div class="hero-card">
+                    <h1 class="card__title">Hey Bruno! 👋</h1>
+                    <p class="card__text">Are you ready to continue your learning path today?</p>
+                </div>
+            </div>
+        </article>
+        <article class="section-two">
+            <hr class="pathline">
+            <div class="circle"></div> 
+        </article>
+        <article class="section-three">
+            <div class="container">
+                <div class="card">
+                    <h2>Your Learning Path</h2>
+                    <ul class="learning-path">
+                        <li>HTML 3</li>
+                        <li>CSS 1</li>
+                        <li>CSS 2</li>
+                        <li>CSS 3</li>
+                        <li>CSS 4</li>
+                        <li>Node.js 1</li>
+                        <li>Npm 1</li>
+                    </ul>
+                    <p>Currently Taking: Algorithms 1</p>
+                </div>
+                <div class="card">
+                    <h2>Algorithms 1</h2>
+                    <div class="classes-container">
+                        <ul class="classes-list">
+                            <li>Algorithms</li>
+                            <li>JavaScript</li>
+                            <li>Your first “Hello World”</li>
+                            <li>Data output</li>
+                            <li>Best Practices</li>
+                        </ul>
+                    </div>
+                    <button class="continue-button">Continue</button>
+                </div>
+                <div class="card">
+                    <h2 class="project-title">This is your project</h2>
+                    <p class="project-description">Join the Student Starbucks Landing Page Challenge and unleash your creativity in building a captivating landing page for Starbucks. Utilize your web development...</p>
+                    <p class="project-text">Let’s see how does it look like on Figma</p>
+                    <a href="https://drive.google.com/file/d/1uS-Wrhtsl_IwXoPE-yOCXnlk5vvPqdtJ/view?usp=sharing"><img src="./img/figma.png" alt="Project Image" height="100px"></a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
